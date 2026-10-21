@@ -100,18 +100,18 @@ export const REGIONS: GeographicRegion[] = [
     cinemaLegacy: 'Il Neorealismo (Visconti, Rossellini, De Sica) che porta la cinepresa nelle macerie del dopoguerra, fondendo il rigore della tragedia classica con la luce del reale.',
     keyInnovations: ['Scatola prospettica a punto di fuga centrale', 'Scaenae frons e cavea monumentale', 'Uso delle location reali e coro popolare nel Neorealismo', 'Regia critica del Piccolo Teatro'],
     prominentCentres: ['Vicenza (Teatro Olimpico)', 'Roma (Teatro di Marcello, Cinecittà)', 'Milano (Piccolo Teatro)', 'Epidauro / Siracusa'],
-    nodeIds: ['teatro_greco_romano', 'scatola_ottica', 'strehler_piccolo', 'visconti_neorealismo', 'ronconi_spazio']
+    nodeIds: ['teatro_greco_romano', 'scatola_ottica', 'strehler_piccolo', 'visconti_neorealismo', 'rossellini_desica_pedinamento', 'cinema_contemporaneo_dautore', 'ronconi_spazio']
   },
   {
     id: 'usa',
-    name: 'Stati Uniti',
+    name: 'Stati Uniti & Cinema Globale',
     flagName: 'US',
-    continent: 'Nord America',
+    continent: 'Nord America / Globale',
     theatreLegacy: 'L\'importazione e rielaborazione del metodo Stanislavskij tramite il Group Theatre di Lee Strasberg e Harold Clurman nell\'Actor\'s Studio, fondamento dell\'acting contemporaneo americano.',
-    cinemaLegacy: 'La grammatica del montaggio analitico (Griffith), la codificazione dello Studio System e la rivoluzione visiva della profondità di campo di Orson Welles e Gregg Toland.',
-    keyInnovations: ['Découpage classico invisibile e regola dei 180°', 'Profondità di campo totale (Deep Focus)', 'Il Metodo dell\'Actor\'s Studio'],
-    prominentCentres: ['Hollywood (Studio System)', 'New York (Broadway, Actor\'s Studio)'],
-    nodeIds: ['griffith', 'welles_profondita', 'decoupage_classico']
+    cinemaLegacy: 'Dalla grammatica analitica di Griffith e la rivoluzione del Deep Focus welliano, fino alle sfide della Virtual Production (The Volume) e al cinema contemporaneo di scala monumentale.',
+    keyInnovations: ['Découpage classico invisibile e regola dei 180°', 'Profondità di campo totale (Deep Focus)', 'Il Metodo dell\'Actor\'s Studio', 'Virtual Production e Piano Sequenza Digitale'],
+    prominentCentres: ['Hollywood (Studio System)', 'New York (Broadway, Actor\'s Studio)', 'The Volume (StageCraft)'],
+    nodeIds: ['griffith', 'welles_profondita', 'decoupage_classico', 'cinema_contemporaneo_dautore', 'cinema_digitale_virtuale']
   },
   {
     id: 'regno_unito',
@@ -1582,6 +1582,156 @@ export const NODES: SceneNode[] = [
     ],
     x: 180,
     y: 520
+  },
+  {
+    id: 'rossellini_desica_pedinamento',
+    label: 'Rossellini, De Sica & Zavattini',
+    subtitle: '1945–1952: Il Neorealismo del pedinamento, la maceria e l\'attore non professionista',
+    category: 'movimento',
+    domain: 'cinema',
+    era: 'classicismo_realismo',
+    yearStart: 1945,
+    yearEnd: 1952,
+    yearLabel: '1945 — 1952',
+    location: 'Italia (Roma, Napoli, Firenze, Delta del Po)',
+    regionId: 'italia',
+    shortDescription: 'L\'etica radicale del Neorealismo: l\'abbandono dei teatri di posa di Cinecittà per scendere sui marciapiedi. Cesare Zavattini teorizza il "pedinamento" dell\'uomo comune; De Sica e Rossellini impiegano attori non professionisti, luce naturale e tempo reale (Roma città aperta, Paisà, Ladri di biciclette, Umberto D.).',
+    fullEssay: [
+      'All\'indomani della Seconda Guerra Mondiale, con l\'Italia devastata dai bombardamenti e la caduta del regime fascista, nasce una delle correnti estetiche più rivoluzionarie dell\'intera storia del cinema: il Neorealismo. Con gli studi di Cinecittà trasformati in campo profughi, i registi sono costretti – e moralmente chiamati – a uscire nelle strade, tra le macerie ancora fumanti.',
+      'Nel 1945 Roberto Rossellini gira "Roma città aperta" con mezzi di fortuna e scarti di pellicola fotografica. La celebre scena in cui Anna Magnani (Pina) corre urlando dietro al camion tedesco prima di essere falciata a morte sul selciato è lo spartiacque definitivo del Novecento: crolla in un istante la finzione decorativa dei "telefoni bianchi" e il cinema diventa testimonianza etica urgente e dolorosa del presente.',
+      'Parallelamente, lo scrittore e sceneggiatore Cesare Zavattini elabora la celebre "teoria del pedinamento": il cinema non deve più costruire trame romanzesche artificiose, ma deve "pedinare" l\'uomo comune nella sua routine quotidiana. Novanta minuti della vita di un uomo qualunque a cui non accade nulla di sensazionale racchiudono tutta la drammaticità del mondo. Insieme a Vittorio De Sica nascono capolavori immortali come "Sciuscià" (1946), "Ladri di biciclette" (1948) e "Umberto D." (1952).',
+      'In "Ladri di biciclette", l\'attore protagonista non è un divo, ma un vero operaio della Breda (Lamberto Maggiorani) che recita con la propria camminata goffa e la propria angoscia autentica. Il critico francese André Bazin consacra questa messinscena come "realismo ontologico": la macchina da presa rispetta la durata viva dell\'evento, il caso, il temporale improvviso che interrompe la ricerca, restituendo allo spettatore la responsabilità morale di interpretare la realtà.'
+    ],
+    keyWorks: [
+      { title: 'Roma città aperta (Roberto Rossellini)', year: 1945, note: 'La morte di Pina sul selciato romano: manifesto visivo della rinascita etica post-bellica', type: 'film' },
+      { title: 'Paisà (Roberto Rossellini)', year: 1946, note: 'Sei capitoli dell\'avanzata alleata: la palude del delta del Po e la tragedia dei partigiani', type: 'film' },
+      { title: 'Ladri di biciclette (Vittorio De Sica / Cesare Zavattini)', year: 1948, note: 'Il capolavoro del pedinamento: la ricerca disperata della bicicletta tra le folle di Roma', type: 'film' },
+      { title: 'Umberto D. (Vittorio De Sica / Cesare Zavattini)', year: 1952, note: 'La sequenza mattutina della servetta che macina il caffè: pura fenomenologia del tempo reale', type: 'film' }
+    ],
+    famousQuote: {
+      text: 'Il tempo è maturo per buttare via i copioni e pedinare l\'uomo con la macchina da presa: la realtà è ricchissima, basta saperla guardare senza trucco.',
+      author: 'Cesare Zavattini',
+      source: 'Alcune idee sul cinema, 1953'
+    },
+    iconographicDetail: {
+      title: 'L\'Inquadratura Neorealista ad Altezza Uomo',
+      subtitle: 'Luce naturale diffusa, selciato urbano e figura intera dell\'attore non professionista',
+      diagramType: 'framing_lens',
+      explanation: 'La cinepresa è collocata ad altezza sguardo senza virtuosismi d\'angolo. L\'ambiente reale non è uno sfondo decorativo, ma un co-protagonista morale ed economico.',
+      visualElements: [
+        { label: 'Location reale e architettura ferita', description: 'Niente cartapesta di studio: muri scrostati, piazze affollate e autobus del dopoguerra' },
+        { label: 'Attore non professionista (Non-Actor)', description: 'I corpi, le mani segnate e la mimica autentica di chi vive la medesima miseria del personaggio' },
+        { label: 'I tempi morti (Dead Time)', description: 'La durata dell\'inquadratura accoglie i momenti di vuoto, le attese e i gesti insignificanti' }
+      ],
+      comparativeNote: 'Antitesi frontale dello Studio System hollywoodiano: la messinscena non doma né illumina artificialmente il mondo, ma lo pedina con umiltà.'
+    },
+    connections: [
+      { targetId: 'visconti_neorealismo', relation: 'Le due anime del Neorealismo: pedinamento etico vs lirismo operistico' },
+      { targetId: 'renoir_spazio', relation: 'Renoir fu maestro e ispiratore morale della libertà di sguardo dei registi italiani' },
+      { targetId: 'godard_nouvelle_vague', relation: 'Rossellini fu il faro dichiarato di Godard e Truffaut per le riprese all\'aperto con cinepresa leggera' },
+      { targetId: 'cinema_contemporaneo_dautore', relation: 'Eredità diretta nel cinema contemporaneo di Garrone, Rohrwacher e dei fratelli Dardenne' }
+    ],
+    x: 920,
+    y: 720
+  },
+  {
+    id: 'cinema_contemporaneo_dautore',
+    label: 'Il Cinema d\'Autore Contemporaneo',
+    subtitle: '1990–Oggi: Da Wong Kar-wai e Sorrentino a Denis Villeneuve e Alice Rohrwacher',
+    category: 'movimento',
+    domain: 'cinema',
+    era: 'contemporaneo',
+    yearStart: 1990,
+    yearEnd: 2026,
+    yearLabel: '1990 — Presente',
+    location: 'Internazionale (Hong Kong, Italia, USA, Francia)',
+    regionId: 'italia',
+    shortDescription: 'La messinscena d\'autore contemporanea nel cambio di millennio: la dilatazione sensoriale del tempo (Wong Kar-wai), la monumentalità barocca dell\'inquadratura (Sorrentino), la scala architettonica immersiva (Villeneuve, Nolan) e il Neorealismo magico (Alice Rohrwacher, Matteo Garrone).',
+    fullEssay: [
+      'Negli ultimi decenni, a fronte della standardizzazione ipercinetica del cinema commerciale globale, il cinema d\'autore contemporaneo ha riscoperto la messinscena come spazio di resistenza poetica, filosofica e scultorea.',
+      'A Hong Kong, Wong Kar-wai ("In the Mood for Love", 2000), con la fotografia di Christopher Doyle, crea una messinscena di sensualità claustrofobica senza precedenti: rallentatori cromatici a 50 fotogrammi al secondo (step-printing), corridoi angusti dove gli sguardi si sfiorano senza toccarsi, specchi e stipiti che frammentano i corpi di Maggie Cheung e Tony Leung in quadri ipnotici di solitudine urbana.',
+      'In Italia, l\'eredità del Neorealismo e di Fellini viene riattualizzata in due direzioni feconde: da un lato Paolo Sorrentino ("La grande bellezza", 2013; "È stata la mano di Dio", 2021) adotta una messinscena vertiginosamente barocca, con carrelli fluidi, coreografie notturne e prospettive che esaltano la monumentalità decadente di Roma; dall\'altro Matteo Garrone ("Gomorra", 2008) e Alice Rohrwacher ("Lazzaro felice", "La chimera") riscoprono la grana ruvida della realtà contadina e marginale, innestando il pedinamento neorealista con una dimensione favolistica e sacrale su pellicola 16mm.',
+      'Sul fronte internazionale, autori come Denis Villeneuve ("Sicario", "Arrival", "Dune: Parte Uno e Due"), Paul Thomas Anderson ("Il petroliere") e Christopher Nolan ("Oppenheimer") dimostrano come il grande formato (IMAX 70mm e lenti anamorfiche Ultra Vista) possa coniugare la spettacolarità con la geometrica purezza della composizione scenografica, dove la monumentalità architettonica e il sound design immersivo scolpiscono lo spazio filmico come una cattedrale laica.'
+    ],
+    keyWorks: [
+      { title: 'In the Mood for Love (Wong Kar-wai)', year: 2000, note: 'Step-printing, specchi e sensualità dello spazio compresso nella Hong Kong anni \'60', type: 'film' },
+      { title: 'La grande bellezza (Paolo Sorrentino)', year: 2013, note: 'Carrelli fluidi, corpi danzanti e monumentalità architettonica romana premiata con l\'Oscar', type: 'film' },
+      { title: 'Dune: Parte Uno e Due (Denis Villeneuve)', year: 2021, note: 'Brutalismo architettonico, scala desertica monumentale in IMAX e luce solare estrema', type: 'film' },
+      { title: 'Lazzaro felice (Alice Rohrwacher)', year: 2018, note: 'Rinascita del Neorealismo mistico e popolare girato su pellicola Super 16', type: 'film' }
+    ],
+    famousQuote: {
+      text: 'La messinscena non è decorare uno spazio: è trovare l\'unico punto in cui la luce, il corpo dell\'attore e l\'architettura rivelano la verità emotiva e politica del mondo.',
+      author: 'Paolo Sorrentino'
+    },
+    iconographicDetail: {
+      title: 'Composizione Anamorfica e Monumentalità Contemporanea',
+      subtitle: 'Frame within a frame, palette selettive al neon e formato IMAX',
+      diagramType: 'framing_lens',
+      explanation: 'Uso combinato di formati widescreen estremi (2.39:1 / IMAX) con inquadrature a quadri concentrici (porte, specchi, archi). La figura umana è spesso un atomo solitario schiacciato da volumi geometrici monumentali.',
+      visualElements: [
+        { label: 'Quadri nel quadro (Frame in Frame)', description: 'Stipiti, grate, finestre e specchi che sezionano visivamente i personaggi isolandoli' },
+        { label: 'Illuminazione volumetrica e neon selettivi', description: 'Luce radente, sorgenti LED a vista e contrasti cromatici complementari violenti' },
+        { label: 'Alternanza di scala estrema', description: 'Passaggio continuo dalla vastità architettonica soverchiante alla micro-texture di sguardi e polvere' }
+      ],
+      comparativeNote: 'Evoluzione contemporanea che dialoga con la monumentalità di Kubrick e Welles, unendo l\'eredità visiva del passato alle nuove possibilità ottiche digitali.'
+    },
+    connections: [
+      { targetId: 'rossellini_desica_pedinamento', relation: 'Rielaborazione post-moderna del realismo e della marginalità sociale' },
+      { targetId: 'kubrick_simmetria', relation: 'La simmetria e l\'uso dell\'architettura ripresi da Villeneuve, Anderson e Sorrentino' },
+      { targetId: 'tarkovskij_tempo', relation: 'La dilatazione della durata temporale come via contemplativa spirituale' },
+      { targetId: 'cinema_digitale_virtuale', relation: 'Utilizzo consapevole delle nuove tecnologie digitali di produzione' }
+    ],
+    x: 880,
+    y: 890
+  },
+  {
+    id: 'cinema_digitale_virtuale',
+    label: 'Messinscena Digitale & Virtual Production',
+    subtitle: 'XXI sec.: Il piano-sequenza continuo invisibile e The Volume (StageCraft)',
+    category: 'concetto',
+    domain: 'cinema',
+    era: 'contemporaneo',
+    yearStart: 2006,
+    yearEnd: 2026,
+    yearLabel: '2006 — Presente',
+    location: 'Globale (Hollywood, Londra, Vancouver, Tokyo)',
+    regionId: 'usa',
+    shortDescription: 'La metamorfosi ontologica della messinscena nel XXI secolo: dal "piano sequenza digitale" continuo senza stacchi (Alfonso Cuarón, Iñárritu, Sam Mendes) alla rivoluzione della Virtual Production con pareti LED (The Volume / Unreal Engine) che fondono teatro e cinema in tempo reale.',
+    fullEssay: [
+      'Con il passaggio epocale dalla pellicola fotochimica al sensore digitale e all\'elaborazione grafica computazionale, il concetto stesso di "mettere in scena" subisce la più radicale trasformazione dall\'invenzione del cinematografo. Se per André Bazin la messinscena era la cattura fedele dell\'impronta fisica del reale, nel XXI secolo lo spazio filmico diventa un ibrido fluido tra materia reale e calcolo algoritmico.',
+      'Il primo grande fronte di questa rivoluzione è il "piano-sequenza digitale continuativo". Registi come Alfonso Cuarón ("I figli degli uomini", 2006; "Gravity", 2013; "Roma", 2018), Alejandro G. Iñárritu ("Birdman", 2014) e Sam Mendes ("1917", 2019) superano i limiti fisici della cinepresa analogica (il magazzino di pellicola da 35mm durava al massimo 10 minuti). Grazie a bracci robotici telecomandati (Motion Control), telecamere stabilizzate ultraleggere e cuciture digitali invisibili tra riprese diverse, la cinepresa si muove fluida per decine di minuti senza uno stacco percettibile, penetrando negli abitacoli delle auto o sorvolando campi di battaglia.',
+      'La seconda svolta epocale è la "Virtual Production" tramite StageCraft e schermi LED giganteschi ("The Volume"), inaugurata per "The Mandalorian", "The Batman" (Matt Reeves / Greig Fraser) e produzioni contemporanee. Il tradizionale green screen (il telo verde su cui gli attori recitavano alla cieca e senza illuminazione coerente) viene sostituito da un set circolare avvolto da pareti e soffitti di micro-LED.',
+      'Queste pareti proiettano in tempo reale ambienti tridimensionali renderizzati da motori grafici (come Unreal Engine), sincronizzati al millimetro con la posizione della cinepresa tramite sensori a infrarossi (parallasse dinamica). Il risultato è una prodigiosa convergenza tra teatro e cinema: gli attori tornano a essere circondati da uno spazio tangibile che illumina naturalmente la loro pelle e i loro costumi con la luce del sole o del tramonto, mentre la macchina da presa gode della libertà totale del cinema digitale.'
+    ],
+    keyWorks: [
+      { title: 'I figli degli uomini (Children of Men, Alfonso Cuarón)', year: 2006, note: 'Il piano sequenza nell\'auto sotto assalto: miracolo di coordinazione fisica e cucitura digitale', type: 'film' },
+      { title: 'Birdman (Alejandro González Iñárritu)', year: 2014, note: 'L\'intero film concepito come un unico flusso continuo che attraversa il palcoscenico e Broadway', type: 'film' },
+      { title: 'Gravity (Alfonso Cuarón)', year: 2013, note: 'Inquadratura cosmica a gravità zero: il corpo umano galleggia nello spazio virtuale', type: 'film' },
+      { title: 'The Batman (Matt Reeves / Greig Fraser)', year: 2022, note: 'Uso magistrale di The Volume per catturare la luce del crepuscolo e i riflessi bagnati di Gotham', type: 'film' }
+    ],
+    famousQuote: {
+      text: 'La tecnologia digitale non deve sostituire la messinscena: deve permettere alla cinepresa di muoversi dove prima le leggi della fisica lo impedivano, tenendo sempre al centro il cuore dell\'uomo.',
+      author: 'Alfonso Cuarón'
+    },
+    iconographicDetail: {
+      title: 'Anatomia di The Volume e della Virtual Production',
+      subtitle: 'Pareti LED sincronizzate, parallasse in tempo reale e luce reale riflessa',
+      diagramType: 'stage_layout',
+      explanation: 'Pareti e soffitto semicircolari di schermi LED ad altissima densità proiettano il mondo virtuale 3D. Sensori di tracking sul tetto adattano la prospettiva dello sfondo a ogni movimento della macchina da presa.',
+      visualElements: [
+        { label: 'Parete LED curva a 270° (The Volume)', description: 'Proietta il paesaggio tridimensionale renderizzato da Unreal Engine a 60fps' },
+        { label: 'Camera Tracking & Parallasse dinamica', description: 'Lo sfondo si muove e deforma coerentemente con l\'obiettivo della cinepresa' },
+        { label: 'Luce riflessa fisicamente reale', description: 'I display LED illuminano attori e sabbia reale sul set, eliminando le ombre finte del green screen' }
+      ],
+      comparativeNote: 'Chiude il cerchio storico: torna alla scenografia tangibile che circonda l\'attore (come nel teatro all\'italiana e nei paraventi di Craig), ma dotata dell\'infinita malleabilità ottica del computer.'
+    },
+    connections: [
+      { targetId: 'murnau_kamera', relation: 'Erede diretto dell\'ambizione di liberare la cinepresa da ogni limite gravitazionale' },
+      { targetId: 'scatola_ottica', relation: 'Il Volume (LED Wall) reinventa la scatola prospettica in chiave computazionale' },
+      { targetId: 'cinema_contemporaneo_dautore', relation: 'La Virtual Production al servizio della scala visiva d\'autore' }
+    ],
+    x: 960,
+    y: 990
   }
 ];
 
@@ -1599,6 +1749,18 @@ export const LINKS: NodeLink[] = [
   { source: 'scatola_ottica', target: 'appia_luce', relation: 'Appia demolisce la tela prospettica dipinta', type: 'opposition_rupture' },
   { source: 'scatola_ottica', target: 'kubrick_simmetria', relation: 'Kubrick eredita la prospettiva rinascimentale centrale', type: 'theatre_to_cinema' },
   { source: 'scatola_ottica', target: 'ronconi_spazio', relation: 'Ronconi fa esplodere la scatola chiusa all\'italiana', type: 'opposition_rupture' },
+  { source: 'scatola_ottica', target: 'cinema_digitale_virtuale', relation: 'Il Volume (LED Wall) reinventa la scatola prospettica in chiave computazionale', type: 'theatre_to_cinema' },
+
+  { source: 'rossellini_desica_pedinamento', target: 'visconti_neorealismo', relation: 'Le due anime del Neorealismo: pedinamento etico vs lirismo operistico', type: 'direct_influence' },
+  { source: 'rossellini_desica_pedinamento', target: 'godard_nouvelle_vague', relation: 'Rossellini padre ideale della libertà di ripresa della Nouvelle Vague', type: 'direct_influence' },
+  { source: 'rossellini_desica_pedinamento', target: 'cinema_contemporaneo_dautore', relation: 'Eredità diretta nel cinema del reale contemporaneo (Garrone, Rohrwacher)', type: 'direct_influence' },
+  { source: 'rossellini_desica_pedinamento', target: 'decoupage_classico', relation: 'Rifiuto dell\'artificio di studio e delle tre luci hollywoodiane', type: 'opposition_rupture' },
+
+  { source: 'cinema_contemporaneo_dautore', target: 'cinema_digitale_virtuale', relation: 'La Virtual Production al servizio della scala visiva d\'autore', type: 'direct_influence' },
+  { source: 'cinema_contemporaneo_dautore', target: 'kubrick_simmetria', relation: 'Rigore architettonico e simmetria spaziale contemporanea', type: 'direct_influence' },
+  { source: 'cinema_contemporaneo_dautore', target: 'tarkovskij_tempo', relation: 'La dilatazione temporale come via poetica e contemplativa', type: 'direct_influence' },
+
+  { source: 'cinema_digitale_virtuale', target: 'murnau_kamera', relation: 'Liberazione totale della cinepresa dai vincoli gravitazionali e fisici', type: 'direct_influence' },
 
   { source: 'meiningen', target: 'antoine', relation: 'Antoine adotta l\'organicità d\'insieme dei Meininger', type: 'direct_influence' },
   { source: 'meiningen', target: 'stanislavskij', relation: 'Stanislavskij resta folgorato dalla tournée del 1890', type: 'direct_influence' },

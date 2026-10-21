@@ -71,6 +71,28 @@ export const GuideModal: React.FC<GuideModalProps> = ({ isOpen, onClose }) => {
             </p>
           </div>
 
+          {/* Focus Approfondimento: Neorealismo Italiano */}
+          <div className="p-4 bg-stone-950/70 border border-amber-900/50 rounded-xl space-y-2">
+            <span className="text-xs font-semibold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              Approfondimento: Il Neorealismo Italiano (1945–1952)
+            </span>
+            <p className="text-xs sm:text-sm text-stone-300">
+              La distruzione bellica e l'impossibilità di usare Cinecittà spingono i registi sui marciapiedi reali. Il Neorealismo si divide in due grandi anime complementari: il <strong>lirismo operistico e scultoreo</strong> di Luchino Visconti (<em>La terra trema</em>) e il <strong>pedinamento etico</strong> di Cesare Zavattini, Roberto Rossellini e Vittorio De Sica (<em>Roma città aperta</em>, <em>Ladri di biciclette</em>, <em>Umberto D.</em>). L'attore non professionista, la luce naturale, i tempi morti e il rifiuto del découpage hollywoodiano restituiscono la sacralità e la drammaticità della vita comune.
+            </p>
+          </div>
+
+          {/* Focus Approfondimento: Cinema Contemporaneo */}
+          <div className="p-4 bg-stone-950/70 border border-violet-900/50 rounded-xl space-y-2">
+            <span className="text-xs font-semibold text-violet-400 uppercase tracking-wider flex items-center gap-1.5">
+              <Film className="w-4 h-4 text-violet-400" />
+              Approfondimento: Il Cinema Contemporaneo e la Virtual Production
+            </span>
+            <p className="text-xs sm:text-sm text-stone-300">
+              Nel XXI secolo la messinscena oscilla tra la resistenza contemplativa della <strong>pura autorialità visiva</strong> (la dilatazione sensoriale di Wong Kar-wai, la monumentalità barocca di Paolo Sorrentino, il Neorealismo magico di Alice Rohrwacher, la maestosità in IMAX di Denis Villeneuve) e la <strong>rivoluzione digitale</strong>. Con il piano-sequenza continuo invisibile (Alfonso Cuarón, Iñárritu) e la <em>Virtual Production</em> tramite pareti LED curve (The Volume / StageCraft con Unreal Engine), cinema e teatro si ricongiungono: lo spazio virtuale torna a illuminare fisicamente e in tempo reale gli attori sul set.
+            </p>
+          </div>
+
           {/* How to explore the applet */}
           <div>
             <span className="text-xs uppercase tracking-widest text-amber-400 font-semibold block mb-2">
